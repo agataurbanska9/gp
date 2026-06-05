@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trener Bot — Misje Współpracy Online</title>
+<title>Bot — Misje Współpracy Online</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -376,8 +376,8 @@
 <div class="screen active" id="introScreen">
   <div class="intro">
     <span class="bot-avatar">🤖</span>
-    <h1><span>Trener Bot</span> potrzebuje pomocy!</h1>
-    <p class="subtitle">Cześć! Jestem Trener Bot 🤖. To moja pierwsza lekcja programowania online i&nbsp;nie znam jeszcze wszystkich zasad. Pomóż mi podejmować dobre decyzje podczas zajęć!</p>
+    <h1><span>Bot</span> potrzebuje pomocy!</h1>
+    <p class="subtitle">Cześć! Jestem Bot 🤖. Jestem uczniem na zajęciach programowania online i wciąż uczę się zasad. Pomóż mi podejmować dobre decyzje podczas lekcji!</p>
     <div class="rules-box">
       Za każdą poprawną odpowiedź zdobywasz ⭐<br>
       Sprawdź, czy uda Ci się zostać <strong>Mistrzem Współpracy Online!</strong>
@@ -421,7 +421,7 @@
   const missions = [
     {
       title: "Czas na lekcję",
-      question: "Trener Bot ma zajęcia za minutę. Co powinien zrobić?",
+      question: "Bot ma zajęcia za minutę. Co powinien zrobić?",
       options: [
         "Dołączyć punktualnie i przygotować komputer do pracy.",
         "Włączyć zajęcia 10 minut po czasie.",
@@ -431,7 +431,7 @@
     },
     {
       title: "Ważne pytanie",
-      question: "Trener tłumaczy zadanie, ale Bot chce coś powiedzieć. Co powinien zrobić?",
+      question: "Nauczyciel tłumaczy zadanie, ale Bot chce coś powiedzieć. Co powinien zrobić?",
       options: [
         "Włączyć mikrofon i mówić od razu.",
         "Zgłosić się i poczekać na swoją kolej.",
@@ -491,7 +491,7 @@
     },
     {
       title: "Ktoś mówi",
-      question: "Inny uczestnik właśnie odpowiada na pytanie trenera. Co powinien zrobić Bot?",
+      question: "Inny uczestnik właśnie odpowiada na pytanie nauczyciela. Co powinien zrobić Bot?",
       options: [
         "Bot słucha uważnie i nie przerywa.",
         "Bot rozmawia jednocześnie z kolegą.",
@@ -501,10 +501,10 @@
     },
     {
       title: "Problem techniczny",
-      question: "Bot przestał słyszeć trenera podczas lekcji. Co powinien zrobić?",
+      question: "Bot przestał słyszeć nauczyciela podczas lekcji. Co powinien zrobić?",
       options: [
         "Bot wychodzi z zajęć bez słowa.",
-        "Bot zgłasza problem na czacie lub bezpośrednio trenerowi.",
+        "Bot zgłasza problem na czacie lub nauczycielowi.",
         "Bot nic nie robi i czeka do końca lekcji."
       ],
       correct: 1
@@ -523,16 +523,16 @@
 
   const tiers = [
     { min: 0, max: 4, emoji: "🤖", title: "Młody Robot", tier: "tier-0", desc: "Młody Robot uczy się zasad. Nie szkodzi — spróbuj jeszcze raz, a następnym razem zdobędziesz więcej gwiazdek!" },
-    { min: 5, max: 7, emoji: "🛠️", title: "Pomocnik Trenera Bota", tier: "tier-1", desc: "Znasz już sporo zasad współpracy online. Trener Bot jest pod wrażeniem!" },
+    { min: 5, max: 7, emoji: "🛠️", title: "Pomocnik Bota", tier: "tier-1", desc: "Znasz już sporo zasad współpracy online. Bot jest pod wrażeniem!" },
     { min: 8, max: 9, emoji: "🧠", title: "Ekspert Współpracy Online", tier: "tier-2", desc: "Prawie perfekcyjnie! Twoja wiedza o zasadach jest naprawdę imponująca." },
-    { min: 10, max: 10, emoji: "🏆", title: "Mistrz Współpracy Online!", tier: "tier-3", desc: "Trener Bot może spokojnie prowadzić zajęcia dzięki Twojej pomocy! 🚀" }
+    { min: 10, max: 10, emoji: "🏆", title: "Mistrz Współpracy Online!", tier: "tier-3", desc: "Bot świetnie radzi sobie na zajęciach dzięki Twojej pomocy! 🚀" }
   ];
 
   const feedbackCorrect = [
     "Świetnie! Tak trzymaj! 🎉",
     "Brawo! Doskonała decyzja! 💪",
     "Dokładnie tak! Super! 🌟",
-    "Perfekcyjnie! Trener Bot się uczy! 🤖✨",
+    "Perfekcyjnie! Bot się uczy! 🤖✨",
     "Oczywiście! Rewelacja! 🔥"
   ];
   const feedbackWrong = [
